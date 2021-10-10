@@ -3,8 +3,13 @@
 > 簡單會員登入系統練習
 ![image](https://i.imgur.com/m7zd4Mk.png)
 
-## 使用技術
+## 功能
+1. 登入驗證
+2. 區別user存取權限(不同user可存取不同內容)
+3. 區別user畫面(不同user看到不同內容)
+4. 使用者密碼加密
 
+## 使用技術
 - 後端 - Spring Boot( Spring MVC + Spring Security, Spring Data JPA)
 - 資料庫 - MySQL
 - 前端 - BootStrap, Thymeleaf
