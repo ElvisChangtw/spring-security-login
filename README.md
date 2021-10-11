@@ -16,5 +16,5 @@
 
 ## 須自行設定項目
 - Application.properties內mysql連線
-- 建立db(src/main/resources/static/create_script.sql)
+- 建立db schema(src/main/resources/static/create_script.sql)
 - 請以maven專案打開
