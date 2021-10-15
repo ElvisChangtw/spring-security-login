@@ -1,7 +1,7 @@
 # Java Spring Security Loggin Practice
 
 > 簡單會員登入系統練習
-![image](https://i.imgur.com/m7zd4Mk.png)
+![image](https://i.imgur.com/SFDxmGM.png)
 
 ## 功能
 1. 登入驗證
@@ -15,6 +15,8 @@
 - 前端 - BootStrap, Thymeleaf
 
 ## 須自行設定項目
+- 使用lombok
+- 以maven專案打開
 - Application.properties內mysql連線
 - 建立db(src/main/resources/static/create_script.sql)
-- 請以maven專案打開
+
