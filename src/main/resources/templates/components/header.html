@@ -1,0 +1,13 @@
+<div th:fragment="header">
+    <div class="col">
+        <h1 class="title">Spring Security Demo</h1>
+    </div>
+    <div class="col-4 nav-bar">
+        <form th:action="@{/logout}" method="post">
+            <!-- <span th:text="${currentUser ne null} ? 'Hi, ' + ${currentUser.getUserName()} : 'Guest'"></span> -->
+            <a class="btn btn-info" th:href="@{/}" th:text="Home"></a> <input
+                type="submit" class="sign-in-or-out btn btn-light"
+                th:value="${currentUser ne null} ? 'SingOut' : 'SignIn'">
+        </form>
+    </div>
+</div>

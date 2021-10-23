@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8">
+<title>Spring Security Home</title>
+</head>
+<head th:include="components/includes :: head"></head>
+<body>
+	<div class="container-fluid">
+		<div th:include="components/header :: header "  class="row header"></div>
+		<div class="row body">
+			<div th:include="components/sidebar :: sidebar " class="col-2 sidebar"/>
+			<div class="col content">
+				<div class="col-6">
+					<h1>Home 1</h1>
+					<img th:src="@{images/image1.png}">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:include="components/includes :: foot"></div>
+</body>
+</html>

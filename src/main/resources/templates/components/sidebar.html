@@ -1,0 +1,33 @@
+<div th:fragment="sidebar">
+    <div class="col">
+        <ul class="list-unstyled mb-5">
+            <li id="public"><a class="btn btn-success mb-1">公開頁面</a>
+                <div id="public-dropdown" class="disable dropdown">
+                    <ul>
+                        <li><a class="btn btn-success mb-1" th:href="@{/public}">public</a></li>
+                    </ul>
+                </div></li>
+            <li id="protected"><a class="btn btn-warning mb-1">保護頁面</a>
+                <div id="protected-dropdown" class="disable dropdown">
+                    <ul>
+                        <li><a class="btn btn-warning mb-1" th:href="@{/hello}">Hello頁面</a></li>
+                        <li><a class="btn btn-warning mb-1" th:href="@{/staff}">Staff頁面</a></li>
+                        <li><a class="btn btn-warning mb-1" th:href="@{/admin}">Admin頁面</a></li>
+                        <li><a class="btn btn-warning mb-1" th:href="@{/list}">使用者列表</a></li>
+                    </ul>
+                </div></li>
+            <li><a id="customized-list" class="btn btn-primary mb-1">可訪問頁面</a>
+
+                <div id="customized-list-dropdown"  class="disable dropdown">
+                    <ul>
+                        <li th:each="url : ${urls}">
+                            <a class="btn btn-primary mb-1" th:href="'/'+${url}">
+                                <span th:text="${url}"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

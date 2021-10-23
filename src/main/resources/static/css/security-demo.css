@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.container-fluid {
+	height:100vh;
+}
+.title {
+	text-align: center;
+	padding-left: 300px;
+}
+.header {
+	min-height: 56px;
+	height:8vh;
+	background-color:antiquewhite;
+	border: 2px solid black;
+}
+
+.body{
+	height:92vh;
+	
+}
+ .sidebar {
+	/* background-color: darkgreen; */
+	background-color: lightyellow;
+	border: 2px solid darkgray;
+} 
+.content {
+	background-color: lightyellow;
+	border: 2px solid #369;
+}
+.nav-bar {
+	text-align: right;
+}
+a {
+	width:120px;
+}
+.table>tr {
+	border: 1px red solid;
+}
+.sidebar>.col {
+	text-align: center;
+}
+li>a.btn{
+	width: 100%;
+}
+#login{
+	margin: 100px auto;
+	width: 50vw;
+}
+#login-title {
+	text-align: center;
+}
+
+.denied-text{
+	
+	color:red;
+	font-size:48px;
+}
+.sign-in-or-out {
+	width: 120px;
+}
+.display{
+	display:block;
+}
+.disable{
+	display:none;
+}

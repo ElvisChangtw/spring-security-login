@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8">
+<title>user lists Page</title>
+</head>
+<head th:include="components/includes :: head"></head>
+<body>
+	<div class="container-fluid">
+		<div th:include="components/header :: header "  class="row header"></div>
+		<div class="row body">
+			<div th:include="components/sidebar :: sidebar " class="col-2 sidebar"/>
+			<div class="col-10 content">
+				<div class="col">
+					<h1>User列表頁面</h1>
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>No.</th>
+								<th>user名稱</th>
+								<th>user密碼</th>
+								<th>修改</th>
+							</tr>
+						</thead>
+						<tr th:each="list, stat : ${list}">
+							<td th:text="${stat.count}"></td>
+							<td th:text="${list.username}"></td>
+							<td th:text="${list.password}"></td>
+							<td><a th:href="@{/}">修改</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:include="components/includes :: foot"></div>
+</body>
+</html>
