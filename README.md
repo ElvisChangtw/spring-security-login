@@ -1,7 +1,6 @@
 # Java Spring Security Loggin Practice
 
 > 簡單會員登入系統練習
-![image](https://i.imgur.com/SFDxmGM.png)
 
 ## 功能
 1. 登入驗證
