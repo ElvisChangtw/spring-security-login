@@ -1,5 +1,4 @@
-# Java Spring Security Loggin Practice
-
+# Java Spring Security Login Practice
 > 簡單會員登入系統練習
 
 ## 功能
